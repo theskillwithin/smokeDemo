@@ -9,3 +9,8 @@ app.get("/", (req, res) => {
 });
 
 app.listen(80);
+
+node.rest
+  .fetch("/")
+  .then((response) => response.text())
+  .then((text) => console.log(text));
